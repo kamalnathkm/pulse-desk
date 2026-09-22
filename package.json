@@ -1,0 +1,36 @@
+{
+  "name": "pulsedesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cross-Platform API Client & Network Workbench for Desktop, Web, and Mobile",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "tsx test-smoke.js",
+    "electron": "electron .",
+    "electron:dev": "concurrently -k \"vite\" \"cross-env ELECTRON_START_URL=http://localhost:5173 electron .\""
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}
